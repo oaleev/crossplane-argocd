@@ -4,13 +4,13 @@ metadata:
   name: microservice-api-spring-boot
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: application
+    crossplane.oaleev.io: application
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/microservice-api-spring-boot-config
+    repoURL: https://github.com/oaleev/microservice-api-spring-boot-config
     targetRevision: HEAD
     path: deployment
   destination:
