@@ -6,7 +6,7 @@ metadata:
   name: crossplane-provider-argocd-config
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: crossplane
+    crossplane.oaleev.io: crossplane
   finalizers:
     - resources-finalizer.argocd.argoproj.io
   annotations:
@@ -14,7 +14,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/oaleev/crossplane-argocd
     targetRevision: HEAD
     path: crossplane-contrib/provider-argocd/config
   destination:

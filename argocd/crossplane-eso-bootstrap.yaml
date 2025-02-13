@@ -6,13 +6,13 @@ metadata:
   name: crossplane-eso-bootstrap
   namespace: argocd
   labels:
-    crossplane.jonashackt.io: bootstrap
+    crossplane.oaleev.io: bootstrap
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
-    repoURL: https://github.com/jonashackt/crossplane-argocd
+    repoURL: https://github.com/oaleev/crossplane-argocd
     targetRevision: HEAD
     path: argocd/crossplane-eso-bootstrap
   destination:
